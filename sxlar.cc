@@ -77,6 +77,16 @@ local Window = Rayfield:CreateWindow({
     end,
  })
 
+ local Button = VisualTab:CreateButton({
+   Name = "Player radar",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/Blissful4992/ESPs/refs/heads/main/PlayerRadar.lua", true))()
+   end,
+})
 
-
-
+local Button = VisualTab:CreateButton({
+   Name = "Tracer esp",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/bybsa/tracer_esp/refs/heads/main/main.lua", true))()
+   end,
+})
